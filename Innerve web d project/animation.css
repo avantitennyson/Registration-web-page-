@@ -1,0 +1,55 @@
+.container{
+    margin:30px;
+    width:400px;
+    height:400px;
+    background-color: rgb(218, 199, 236);
+    
+}
+
+.item{
+    height: 50px;
+    width:50px;
+    margin:20px;
+    background-color : #800080;
+border: solid black 1px;
+display:inline-block;/* this pt. is for inline---->we cannot set width and hieght whn we will write letter or words
+it will show up
+but if we write inline-block thn we can set up height and all */
+
+animation: bounce 2s infinite ;
+
+}
+
+.one{
+    animation-timing-function: ease-in;
+    /*starts slow and ends fast and vice versa in ease-out*/
+}
+
+.two{
+    animation-timing-function: ease-out;
+}
+
+.three{
+    animation-timing-function: linear;
+
+    /*in fourth class humne kuch v ni diya so by default it is in
+    ease-in-out state it starts slow fast in middle and ends slow*/
+}
+
+@keyframes bounce {
+    0%{
+     /*   transform: scale(2); u can use ths if u wnt to make big squres 
+     at 0percent */
+    }
+    
+    50%{
+        transform: translateY(300px);
+        background-color: deeppink;
+    }
+80%{
+    background-color: palevioletred;
+}
+    100%{
+
+    }
+}
